@@ -24,9 +24,16 @@
   font-weight: 600;
 }
 
+.gray-color {
+  color: hsl(228, 34%, 66%);
+}
+
 .container2 {
   width: 85%;
   margin-inline: auto;
+
+  display: grid;
+  gap: 3rem;
 }
 
 .heading {
@@ -37,9 +44,31 @@
   border-bottom: .7px solid hsl(228, 34%, 66%);
 }
 
+.account-cards {
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+}
+
+.account-card {
+  max-width: 310px;
+}
+
+.account-card:hover {
+  background-color: hsl(230, 12%, 29%);
+}
+
+.card-top-bar {
+  height: 4px;
+  background-color: brown;
+}
+
+
+
 @media (min-width: 768px) {
   .container2 {
     width: 80%;
+    gap: 4rem;
   }
 
   .gray-text {
@@ -50,3 +79,4 @@
     border-bottom: none;
   }
 }
+
