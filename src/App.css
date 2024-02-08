@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,43 @@
   box-sizing: border-box;
 }
 
-
 .App {
-  
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard {
+  min-height: 100dvh;
+  padding-top: 2.5rem;
+}
+
+.gray-text {
+  color: hsl(228, 34%, 66%);
+  font-weight: 600;
+}
+
+.container2 {
+  width: 85%;
+  margin-inline: auto;
+}
+
+.heading {
+  font-size: 1.7rem;
+}
+
+.header-top {
+  border-bottom: .7px solid hsl(228, 34%, 66%);
+}
+
+@media (min-width: 768px) {
+  .container2 {
+    width: 80%;
+  }
+
+  .gray-text {
+    font-size: .9rem;
+  }
+
+  .header-top {
+    border-bottom: none;
+  }
 }
