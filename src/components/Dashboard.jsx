@@ -6,7 +6,7 @@ import Overview from "@/components/Overview"
 
 function Dashboard() {
     const [isDarkTheme, setIsDarkTheme] = useState(true)
-    const bgColor = isDarkTheme ? 'hsl(232, 19%, 15%)' : '#eee'
+    const bgColor = isDarkTheme ? 'hsl(232, 19%, 15%)' : 'white'
     const textColor = isDarkTheme ? 'hsl(0, 0%, 100%)' : 'black'
     const totalFollowrs = 230004
 

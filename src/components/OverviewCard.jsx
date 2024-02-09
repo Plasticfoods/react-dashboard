@@ -26,7 +26,7 @@ export default function OverviewCard({ cardBgColor, textColor, topText, topLogo,
                 </div>
             </CardHeader>
             <CardContent className='flex justify-between'>
-                <p className="text-2xl font-bold">{growthNumber}</p>
+                <p className="text-2xl font-bold">{growthNumber > 10000 ? (growthNumber / 1000 + 'k') : growthNumber}</p>
                 <div className="flex gap-2 items-center">
                     <div className="flex justify-between items-end text-lg">
                         <img src={upDownIcon} alt="grwoth icon" />

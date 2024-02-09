@@ -26,6 +26,41 @@ const overviewList = [
         growthNumber: 5462,
         growthPercentage: 2257,
         upDownIcon: iconUp
+    },
+    {
+        topText: 'Profile Views',
+        topLogo: instagramLogo,
+        growthNumber: 52000,
+        growthPercentage: 1375,
+        upDownIcon: iconUp
+    },
+    {
+        topText: 'Retweets',
+        topLogo: twitterLogo,
+        growthNumber: 117,
+        growthPercentage: 303,
+        upDownIcon: iconUp
+    },
+    {
+        topText: 'Likes',
+        topLogo: twitterLogo,
+        growthNumber: 507,
+        growthPercentage: 553,
+        upDownIcon: iconUp
+    },
+    {
+        topText: 'Likes',
+        topLogo: youtubeLogo,
+        growthNumber: 107,
+        growthPercentage: -19,
+        upDownIcon: iconDown
+    },
+    {
+        topText: 'Total Views',
+        topLogo: youtubeLogo,
+        growthNumber: 1407,
+        growthPercentage: -12,
+        upDownIcon: iconDown
     }
 ]
 
