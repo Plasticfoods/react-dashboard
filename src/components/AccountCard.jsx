@@ -26,7 +26,9 @@ export default function AccountCard({ cardBgColor, textColor, topLogo, username,
                 </div>
             </CardHeader>
             <CardContent className='flex flex-col items-center'>
-                <p className="text-5xl font-bold">{followerCount}</p>
+                <p className="text-5xl font-bold">
+                    {followerCount >= 10000 ? (followerCount / 1000 + 'k') : followerCount}
+                </p>
                 <p
                     className="gray-color uppercase text-xs break-all"
                     style={{ letterSpacing: '.4em' }}
@@ -40,7 +42,7 @@ export default function AccountCard({ cardBgColor, textColor, topLogo, username,
                     className="font-semibold text-sm"
                     style={{ color: bottomTextColor }}
                 >
-                    {followesChange} Today
+                    {followesChange < 0 ? (followesChange * -1) : followesChange} Today
                 </p>
             </CardFooter>
         </Card>

@@ -34,6 +34,8 @@
 
   display: grid;
   gap: 3rem;
+
+  padding-bottom: 100px;
 }
 
 .heading {
@@ -47,11 +49,13 @@
 .account-cards {
   display: grid;
   gap: 1.8rem;
+  justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
 }
 
 .account-card {
-  max-width: 310px;
+  max-width: 320px;
+  min-width: 250px
 }
 
 .account-card:hover {
@@ -63,6 +67,17 @@
   background-color: brown;
 }
 
+.overview-cards {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+}
+
+.overview-card {
+  max-width: 320px;
+  min-width: 250px
+}
 
 
 @media (min-width: 768px) {

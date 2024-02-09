@@ -2,9 +2,9 @@ import AccountCard from "./AccountCard"
 import accounts from "@/accounts"
 
 
-export default function AccountCards({ isDarkTheme }) {
+export default function AccountCards({ isDarkTheme, textColor }) {
     const cardBgColor = isDarkTheme ? 'hsl(228, 28%, 20%)' : 'hsl(225, 100%, 98%)'
-    const cardTextColor = isDarkTheme ? 'hsl(0, 0%, 100%)' : 'black'
+    const cardTextColor = textColor
 
     return (
         <div className="account-cards">

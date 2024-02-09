@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Switch } from "@/components/ui/switch"
 import AccountCards from "./AccountCards"
+import Overview from "@/components/Overview"
 
 
 function Dashboard() {
@@ -28,7 +29,10 @@ function Dashboard() {
                 </header>
 
                 {/* Accounts  */}
-                <AccountCards isDarkTheme={isDarkTheme} />
+                <AccountCards isDarkTheme={isDarkTheme} textColor={textColor} />
+
+                {/* Overview  */}
+                <Overview isDarkTheme={isDarkTheme} textColor={textColor} />
             </div>
         </div>    
     )
